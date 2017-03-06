@@ -1,0 +1,31 @@
+<div class="random-user">
+    <button @click="GetData">添加</button>
+    <span v-show="IsLoading" style="color: darkred">加载中.....</span>
+    <br/><br/>
+    <table>
+        <thead>
+        <tr>
+            <th>索引</th>
+            <th>头像</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>电邮</th>
+            <th>电话</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(user, idx) in userList">
+            <td>{{idx + 1}}</td>
+            <td><img :src="user.picture" :alt="user.name"/></td>
+            <td>{{user.name}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>
+                <button @click="deleteUser(idx)">删除</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,16 @@
+<div class="lables-root" :style="{width:maxWidth + 140 + 'px'}">
+  <div class="add-item">
+    <input type="text" v-model="label" @keyup.enter="nextForcus($event)"/>
+    <input type="number" min="0" max="100" v-model="percent" @keyup.enter="add()"/>
+    <button class="btn" @click="add()">+</button>
+  </div>
+  <div class="lable-container">
+    <div class="list labels" v-for="(item, idx) in labelList">
+      <label class="label" :title="item.label" v-text="item.label"></label>
+      <span class="dib bg" :style="{width:maxWidth+'px'}">
+          <span class="dib" :style="{width:(item.percent/100*maxWidth)+'px'}">&nbsp;{{item.percent}}%</span>
+      </span>
+      <button class="btn" @click="deleteItem(idx)">X</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+nav a {
+    margin-right: 10px;
+    color: #666666;
+}
+.component-container { margin: 20px; }
+.component-container .random-user button { padding: 5px 15px; }
+.component-container .random-user table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    min-width: 800px
+}
+.component-container .random-user th, td {
+    padding: 5px 15px;
+    vertical-align: middle;
+    border: 1px solid #aaaaaa;
+}
+.component-container .lables-root {
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+}
+.component-container .lables-root .lable-container {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #cccccc;
+}
+.component-container .lables-root .list {
+    padding: 5px 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.component-container .lables-root .btn {
+    padding: 0px 10px;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.component-container .lables-root .btn:hover {
+    background-color: #ff0000;
+}
+.component-container .lables-root .add-item .btn:hover {
+    background-color: #00ff66;
+}
+.component-container .lables-root input {
+    vertical-align: middle;
+    width: 40%;
+}
+.component-container .lables-root .list.labels .dib {
+    display: inline-block
+}
+.component-container .lables-root .list.labels .label {
+    vertical-align: middle;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    text-align: right;
+    overflow: hidden;
+}
+.component-container .lables-root .list.labels .dib.bg {
+    width: 120px;
+    height: 100%;
+    background-color: #999999;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.component-container .lables-root .list.labels .dib.bg .dib {
+    width: 0;
+    height: 100%;
+    background-color: #ee99ff;
+}
